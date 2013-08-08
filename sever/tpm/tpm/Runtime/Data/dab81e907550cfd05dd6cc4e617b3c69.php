@@ -1,0 +1,2 @@
+<?php
+return '{"status":1,"info":"","data":[{"id":"420","uid":"3","book_id":"1","menu_id":"2","sort":"1","content":"\\u672c\\u7ae0\\u4e3a\\u60a8\\u4ecb\\u7ecd\\u5b66\\u4e60ThinkPHP\\u6846\\u67b6\\u9700\\u8981\\u4e86\\u89e3\\u7684\\u57fa\\u7840\\u6982\\u5ff5\\u548c\\u5bf9ThinkPHP\\u7684\\u6982\\u8ff0\\u4ecb\\u7ecd\\u3002","create_time":"1331962551","update_time":"1331962551","status":"0"}]}'; ?>

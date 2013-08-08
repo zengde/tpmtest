@@ -1,0 +1,123 @@
+#ProcatPage .ui-title{
+	margin-left:1em;text-align:left;
+}
+.price{
+	color:red;
+}
+.header .back {
+	background:url("../img/but_back.png") no-repeat scroll 0 0 transparent;
+	background-size: 40px 30px;
+    height: 30px;
+    width: 40px;
+	border:none;
+}
+.header .back:after {
+    background: url("../img/shuxian.png") no-repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 30px;
+    margin-left: 100%;
+    width: 40px;
+	position: absolute;
+    top: 0;
+}
+.back .ui-btn-inner{
+	border:none;
+}
+.prothumb {
+    left: 1%;
+    position: absolute;
+    top: 20%;
+}
+.ui-select {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+#gallery { list-style: none; padding: 0; margin: 0; }
+#gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+#gallery li {width: 90%;max-width:640px; }
+#gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+#gallery li img,#firstimg img { display: block; width: 100%; height: auto; }
+#firstimg{position: relative;}
+#firstimg .zoom_icon{
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	width: 90px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#firstimg .img_count{
+	left:95px;
+	bottom:7px;
+}
+.detail_w .video_img {
+	display: block;
+	position: relative;
+	font-weight: 100;
+	margin: 0 auto 10px;
+	max-width: 460px;
+}
+.detail_w .videoMask:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: -25px 0 0 -25px;
+	background: rgba(0,0,0,.5) url('../img/pDetail.png') 10px 10px no-repeat;
+	border-radius: 10px;
+	boverflow: hidden;
+	z-index: 9;
+}
+.detail_w .videoMask {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+	z-index: 9;
+	background: #18171c;
+}
+.detail_w .videoMask img {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.detail_w .videoMask i {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding: 0 7px;
+	color: #fff;
+	font-size: 14px;
+	font-style: normal;
+	background: rgba(0,0,0,.5);
+}
+.detail_w .video {
+	display: block;
+	margin: 0 auto;
+	visibility: hidden;
+	max-width: 100%;
+	min-width: 300px;
+	min-height: 225px;
+}
+.supplierlist{text-indent:10px;}
