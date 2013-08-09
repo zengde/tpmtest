@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html class="sidebar_default no-js" lang="en">
-<head>
-<meta charset="utf-8">
-<title>Profile - Start - Admin Template</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="shortcut icon" href="css/images/favicon.png">
-<!-- Le styles -->
-<link href="../Public/metro/css/base.css" rel="stylesheet">
-<link href="../Public/metro/css/twitter/responsive.css" rel="stylesheet">
 <script src="../Public/metro/js/plugins/modernizr.custom.32549.js"></script>
-</head>
-
-<body>
 <div id="loading"><img src="../Public/metro/img/ajax-loader.gif"></div>
 <div id="responsive_part">
   <div class="logo"> <a href="index.html"><span>首页</span><span class="icon"></span></a> </div>
@@ -23,8 +8,6 @@
     </li>
   </ul>
 </div>
-<!-- Responsive part -->
-
 <div id="sidebar" class=" collapse1 in">
   <div class="scrollbar">
     <div class="track">
@@ -48,12 +31,12 @@
         <volist name='list' id='vo' key='k'>
 			<li class="accordion-group color_{$k}">
 			<empty name="vo['_child']">
-				<a class="dashboard " href="read.html?id={$vo.id}&title={$vo.title}"><img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
+				<a class="dashboard " href="/Index/read.html?id={$vo.id}&title={$vo.title}"><img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
 			<else />
 				<a class="accordion-toggle widgets collapsed " data-toggle="collapse" data-parent="#sidebar_menu" href="#collapse{$k}"> <img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
 				<ul id="collapse{$k}" class="accordion-body collapse">
 				<volist name="vo['_child']" id='co'>
-				<li><a href='read.html?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
+				<li><a href='/Index/read.html?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
 				</volist>
 				</ul>
 			</empty>
@@ -67,8 +50,7 @@
 <div id="main">
   <div class="container">
     <div class="header row-fluid">
-      <div class="logo"> <a href="index.html"><span>首页</span><span class="icon"></span></a> </div>
-      <!-- End top-right --> 
+      <div class="logo"> <a href="/Index/read.html"><span>首页</span><span class="icon"></span></a> </div>
     </div>
     <div id="main_container">
       <div class="row-fluid">
@@ -80,35 +62,19 @@
             <p>{$vo.content}</p>
 			</volist>
           </div>
-          <!-- End .content --> 
         </div>
-        <!-- End .span9 --> 
       </div>
-      <!-- End .row-fluid --> 
-      
     </div>
-    <!-- End #container --> 
   </div>
   <div id="footer">
     <p> ThinkPHP Mobile 测试版 </p>
   </div>
 </div>
 </div>
-<!-- /container --> 
-
-<!-- Le javascript
-    ================================================== --> 
-<!-- General scripts --> 
-<script src="../Public/metro/js/jquery.js" type="text/javascript"> </script> 
 <!--[if !IE]> -->
 <script src="../Public/metro/js/plugins/enquire.min.js" type="text/javascript"></script> 
 <!-- <![endif]-->
 <script src="../Public/metro/js/bootstrap-collapse.js" type="text/javascript"></script> 
-<script language="javascript" type="text/javascript" src="../Public/metro/js/plugins/jquery.tinyscrollbar.min.js"></script> 
-<script language="javascript" type="text/javascript" src="../Public/metro/js/jquery.touchSwipe.min.js"></script> 
-
-<!-- Custom made scripts for this template --> 
+<script src="../Public/metro/js/plugins/jquery.tinyscrollbar.min.js" type="text/javascript"></script> 
+<script src="../Public/metro/js/jquery.touchSwipe.min.js" type="text/javascript"></script> 
 <script src="../Public/metro/js/scripts.js" type="text/javascript"></script> 
-
-</body>
-</html>

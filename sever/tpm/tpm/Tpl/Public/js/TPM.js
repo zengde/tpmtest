@@ -581,6 +581,7 @@ var TPM={
             }
 			//绝对地址的链接不过滤
 			_self.http(url,$(this).attr('rel'));
+			return false;
 		});
 		//form标签的处理
 		$('form[action^="/"],form[action^="./"]',_box).submit(function(e){
@@ -592,6 +593,7 @@ var TPM={
             }
 			_self.http(url,$(this).attr('rel'),$(this).serializeArray(),$(this).attr('method'));
 		});
+		/*
 		//锚点处理
 		$('a[href^="#"]',_box).click(function(e){
 			e.preventDefault();
@@ -604,7 +606,7 @@ var TPM={
 				_self.scrollTop(0,_self.op.anchor_move_speed);
 			}
 		});
-       
+		*/
         $.each(this.op._ready,function(k,fun){
 			fun(selector);
 		})
@@ -717,6 +719,7 @@ var TPM={
 				content=content.replace(matcher,replace);
 			});
 			$('#'+rel).empty().append(content);
+			_self.initUI($('#'+rel));
 			/*
 			//分离js
 			var ret=_self.stripScripts(content);

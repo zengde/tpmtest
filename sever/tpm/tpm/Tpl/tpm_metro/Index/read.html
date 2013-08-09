@@ -1,0 +1,80 @@
+<script src="../Public/metro/js/plugins/modernizr.custom.32549.js"></script>
+<div id="loading"><img src="../Public/metro/img/ajax-loader.gif"></div>
+<div id="responsive_part">
+  <div class="logo"> <a href="index.html"><span>首页</span><span class="icon"></span></a> </div>
+  <ul class="nav responsive">
+    <li>
+      <button class="btn responsive_menu icon_item" data-toggle="collapse" data-target=".overview"> <i class="icon-reorder"></i> </button>
+    </li>
+  </ul>
+</div>
+<div id="sidebar" class=" collapse1 in">
+  <div class="scrollbar">
+    <div class="track">
+      <div class="thumb">
+        <div class="end"></div>
+      </div>
+    </div>
+  </div>
+  <div class="viewport ">
+    <div class="overview collapse">
+	  <div class="search row-fluid container">
+        <h2>搜索</h2>
+        <form class="form-search">
+          <div class="input-append">
+            <input type="text" class=" search-query" placeholder="">
+            <button class="btn_search color_4">搜索</button>
+          </div>
+        </form>
+      </div>
+      <ul id="sidebar_menu" class="navbar nav nav-list container full">
+        <volist name='list' id='vo' key='k'>
+			<li class="accordion-group color_{$k}">
+			<empty name="vo['_child']">
+				<a class="dashboard " href="/Index/read.html?id={$vo.id}&title={$vo.title}"><img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
+			<else />
+				<a class="accordion-toggle widgets collapsed " data-toggle="collapse" data-parent="#sidebar_menu" href="#collapse{$k}"> <img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
+				<ul id="collapse{$k}" class="accordion-body collapse">
+				<volist name="vo['_child']" id='co'>
+				<li><a href='/Index/read.html?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
+				</volist>
+				</ul>
+			</empty>
+			</li>
+		</volist>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="container">
+    <div class="header row-fluid">
+      <div class="logo"> <a href="/Index/read.html"><span>首页</span><span class="icon"></span></a> </div>
+    </div>
+    <div id="main_container">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="content spacer-big" style='padding:5px;'>
+            <h3><span>{$title}</span></h3>
+            <hr>
+			<volist name='data' id='vo'>
+            <p>{$vo.content}</p>
+			</volist>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p> ThinkPHP Mobile 测试版 </p>
+  </div>
+</div>
+</div>
+<!--[if !IE]> -->
+<script src="../Public/metro/js/plugins/enquire.min.js" type="text/javascript"></script> 
+<!-- <![endif]-->
+<script src="../Public/metro/js/bootstrap-collapse.js" type="text/javascript"></script> 
+<script src="../Public/metro/js/plugins/jquery.tinyscrollbar.min.js" type="text/javascript"></script> 
+<script src="../Public/metro/js/jquery.touchSwipe.min.js" type="text/javascript"></script> 
+<script src="../Public/metro/js/scripts.js" type="text/javascript"></script> 

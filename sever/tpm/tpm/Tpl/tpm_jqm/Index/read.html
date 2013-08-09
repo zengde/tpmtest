@@ -1,0 +1,91 @@
+<style>
+.ui-content {
+	line-height: 1.6em;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+code.prettyprint {
+	position: relative;
+	border: 0;
+	border: 1px solid #D1D7DC;
+	margin-left: 0;
+	padding: 2px;
+	font-size: 14px;
+	display: block;
+	font-family: "Consolas",\5FAE\8F6F\96C5\9ED1;
+	margin: 10px 0;
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+.ui-content table{
+	background: #666;
+	margin: 10px 0;
+}
+
+.ui-content table th{
+	color: #fff;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #666;
+}
+
+.ui-content td{
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #fff; 
+	cursor: pointer;
+}
+
+.ui-content .add td{
+	background: #efefef; 
+}
+
+.ui-content table .hover td{
+	background: #D9E5F5;
+}
+.ui-header .jqm-navmenu-link{right:6%;}
+</style>
+<div data-role="page" id="DocPage">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a href="{$appurl}" data-rel="back" class="ui-btn-left" data-icon="back">返回</a>
+		<h1 id="doctitle">{$title}</h1>
+		<a href="#mypanel" class="ui-btn-right jqm-navmenu-link" data-icon="bars">目录</a>
+		<a href="{$appurl}" data-icon="home" class="ui-btn-right">首页</a>
+	</div>
+	<div data-role="content" id="doccontent">
+		<volist name='data' id='vo'>
+		{$vo.content}
+		</volist>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<p style="text-align:center;">
+		ThinkPHP Mobile 测试版
+		</p>
+	</div>
+	<div id='mypanel' data-role="panel" class="jqm-nav-panel jqm-navmenu-panel" data-position="right" data-display="overlay" data-theme="c">
+		<ul data-role="listview" data-theme="d" data-divider-theme="d" data-icon="false" data-global-nav="demos" class="jqm-list">
+			<volist name='list' id='vo'>
+			<li data-role="list-divider">{$vo.title}</li>
+			<empty name="vo['_child']">
+				<li><a href='{$appurl}/read?id={$vo.id}&title={$vo.title}'>{$vo.title}</a></li>
+			<else />
+				<volist name="vo['_child']" id='co'>
+				<li><a href='{$appurl}/read?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
+				</volist>
+			</empty>
+			</volist>
+		</ul>
+	</div>
+</div>

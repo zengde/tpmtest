@@ -1,0 +1,28 @@
+<div data-role="page" id="MainPage">
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<h1>ThinkPHP文档</h1>
+	</div>
+	<div data-role="content">
+		<div data-role="collapsible-set" data-theme="d" data-content-theme="d">
+			<volist name='list' id='vo'>
+			<div data-role="collapsible">
+				<h3>{$vo.title}</h3>
+				<ul data-role="listview">
+					<empty name="vo['_child']">
+						<li><a href='{$appurl}/read?id={$vo.id}&title={$vo.title}'>{$vo.title}</a></li>
+					<else />
+						<volist name="vo['_child']" id='co'>
+						<li><a href='{$appurl}/read?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
+						</volist>
+					</empty>
+				</ul>
+			</div>
+			</volist>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<p style="text-align:center;">
+		ThinkPHP Mobile 测试版
+		</p>
+	</div>
+</div>
