@@ -46,6 +46,7 @@ $.fn.extend({
    TPM.sendAjax(api,datas_obj,'get',function(response){
        //渲染模板
        $.get(tpl,function(d,x,s){
+	   alert(response)
            var html=TPM.parseTpl(d,response);
            //判断是否为第一页，如果为第一页，清空以前数据然后重新加载，如果不是第一页数据进行累加
            if(1==page){
