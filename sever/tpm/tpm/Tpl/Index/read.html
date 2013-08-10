@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html class="sidebar_default no-js" lang="en">
-<head>
-<meta charset="utf-8">
-<title>Read</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="../Public/metro/css/images/favicon.png">
-<!-- Le styles -->
-<link href="../Public/metro/css/base.css" rel="stylesheet">
-<link href="../Public/metro/css/twitter/responsive.css" rel="stylesheet">
 <script src="../Public/metro/js/plugins/modernizr.custom.32549.js"></script>
-</head>
-
-<body>
 <div id="loading"><img src="../Public/metro/img/ajax-loader.gif"></div>
 <div id="responsive_part">
   <div class="logo"> <a href="index.html"><span>首页</span><span class="icon"></span></a> </div>
@@ -46,12 +33,12 @@
         <volist name='list' id='vo' key='k'>
 			<li class="accordion-group color_{$k}">
 			<empty name="vo['_child']">
-				<a class="dashboard " href="read.html?id={$vo.id}&title={$vo.title}"><img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
+				<a class="dashboard " href="__URL__/read.html?id={$vo.id}&title={$vo.title}"><img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
 			<else />
 				<a class="accordion-toggle widgets collapsed " data-toggle="collapse" data-parent="#sidebar_menu" href="#collapse{$k}"> <img src="../Public/metro/img/menu_icons/{$k}.png"><span>{$vo.title}</span></a>
 				<ul id="collapse{$k}" class="accordion-body collapse">
 				<volist name="vo['_child']" id='co'>
-				<li><a href='read.html?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
+				<li><a href='__URL__/read.html?id={$co.id}&title={$co.title}'>{$co.title}</a></li>
 				</volist>
 				</ul>
 			</empty>
@@ -107,6 +94,3 @@
 
 <!-- Custom made scripts for this template --> 
 <script src="../Public/metro/js/scripts.js" type="text/javascript"></script> 
-
-</body>
-</html>

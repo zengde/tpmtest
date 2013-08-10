@@ -718,9 +718,6 @@ var TPM={
 				var matcher=new RegExp(find.replace(/[-[\]{}()+?.,\\^$|#\s]/g,'\\$&'),'g');	
 				content=content.replace(matcher,replace);
 			});
-			$('#'+rel).empty().append(content);
-			_self.initUI($('#'+rel));
-			/*
 			//分离js
 			var ret=_self.stripScripts(content);
 			var html=ret.text;
@@ -729,7 +726,7 @@ var TPM={
 			_self.initUI($('#'+rel));
 			//执行页面js
 			_self.execScript(js,$('#'+rel));
-			*/
+			
 
 		},'text');	
 	},

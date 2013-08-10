@@ -3,23 +3,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset="UTF-8">
-	<title>test</title>
+	<title><?php echo ($title); ?>-ThinkPhp文档</title>
+	<link href="../Public/metro/css/base.css" rel="stylesheet">
+	<link href="../Public/metro/css/twitter/responsive.css" rel="stylesheet">
 </head>
 <body>
-	<!DOCTYPE html>
-<html class="sidebar_default no-js" lang="en">
-<head>
-<meta charset="utf-8">
-<title>Profile - Start - Admin Template</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="../Public/metro/css/images/favicon.png">
-<!-- Le styles -->
-<link href="../Public/metro/css/base.css" rel="stylesheet">
-<link href="../Public/metro/css/twitter/responsive.css" rel="stylesheet">
-<script src="../Public/metro/js/plugins/modernizr.custom.32549.js"></script>
-</head>
-
-<body>
+	<script src="../Public/metro/js/plugins/modernizr.custom.32549.js"></script>
 <div id="loading"><img src="../Public/metro/img/ajax-loader.gif"></div>
 <div id="responsive_part">
   <div class="logo"> <a href="index.html"><span>首页</span><span class="icon"></span></a> </div>
@@ -52,11 +41,11 @@
       </div>
       <ul id="sidebar_menu" class="navbar nav nav-list container full">
         <?php if(is_array($list)): $k = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><li class="accordion-group color_<?php echo ($k); ?>">
-			<?php if(empty($vo['_child'])): ?><a class="dashboard " href="read.html?id=<?php echo ($vo["id"]); ?>&title=<?php echo ($vo["title"]); ?>"><img src="../Public/metro/img/menu_icons/<?php echo ($k); ?>.png"><span><?php echo ($vo["title"]); ?></span></a>
+			<?php if(empty($vo['_child'])): ?><a class="dashboard " href="__URL__/read.html?id=<?php echo ($vo["id"]); ?>&title=<?php echo ($vo["title"]); ?>"><img src="../Public/metro/img/menu_icons/<?php echo ($k); ?>.png"><span><?php echo ($vo["title"]); ?></span></a>
 			<?php else: ?>
 				<a class="accordion-toggle widgets collapsed " data-toggle="collapse" data-parent="#sidebar_menu" href="#collapse<?php echo ($k); ?>"> <img src="../Public/metro/img/menu_icons/<?php echo ($k); ?>.png"><span><?php echo ($vo["title"]); ?></span></a>
 				<ul id="collapse<?php echo ($k); ?>" class="accordion-body collapse">
-				<?php if(is_array($vo['_child'])): $i = 0; $__LIST__ = $vo['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$co): $mod = ($i % 2 );++$i;?><li><a href='read.html?id=<?php echo ($co["id"]); ?>&title=<?php echo ($co["title"]); ?>'><?php echo ($co["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+				<?php if(is_array($vo['_child'])): $i = 0; $__LIST__ = $vo['_child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$co): $mod = ($i % 2 );++$i;?><li><a href='__URL__/read.html?id=<?php echo ($co["id"]); ?>&title=<?php echo ($co["title"]); ?>'><?php echo ($co["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul><?php endif; ?>
 			</li><?php endforeach; endif; else: echo "" ;endif; ?>
       </ul>
@@ -107,8 +96,5 @@
 
 <!-- Custom made scripts for this template --> 
 <script src="../Public/metro/js/scripts.js" type="text/javascript"></script> 
-
-</body>
-</html>
 </body>
 </html>

@@ -2227,3 +2227,56 @@
 [ 2013-08-09T11:45:44+08:00 ] /2013-8/tpm//Index/read.html?id=3&title=%E7%AE%80%E4%BB%8B | INFO: Tag[ view_end ] --START--
 [ 2013-08-09T11:45:44+08:00 ] /2013-8/tpm//Index/read.html?id=3&title=%E7%AE%80%E4%BB%8B | INFO: Run ShowPageTrace Behavior [ RunTime:0.003674s ]
 [ 2013-08-09T11:45:44+08:00 ] /2013-8/tpm//Index/read.html?id=3&title=%E7%AE%80%E4%BB%8B | INFO: Tag[ view_end ] --END-- [ RunTime:0.004420s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ route_check ] --START--
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run CheckRoute Behavior [ RunTime:0.006001s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.033915s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ app_begin ] --START--
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.005869s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.009038s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ action_begin ] --START--
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run SwitchMobileTpl Behavior [ RunTime:0.005277s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ action_begin ] --END-- [ RunTime:0.006079s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | NOTIC: [8] Undefined index:  title IndexAction.class.php 第 33 行.
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_template ] --START--
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run LocationTemplate Behavior [ RunTime:0.005184s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.005808s ]
+[ 2013-08-09T08:50:25+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_parse ] --START--
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ParseTemplate Behavior [ RunTime:0.320717s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.321979s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_filter ] --START--
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ContentReplace Behavior [ RunTime:0.008145s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run TokenBuild Behavior [ RunTime:0.013843s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.003837s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ShowRuntime Behavior [ RunTime:0.005665s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.033234s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_end ] --START--
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.004616s ]
+[ 2013-08-09T08:50:26+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.005256s ]
+[ 2013-08-09T08:50:43+08:00 ] /2013-8/tpm/tpm/Tpl/Public/metro/sass/font/fontawesome-webfont.woff | ERR: (ThinkException) 无法加载模块tpm
+[ 2013-08-09T08:50:43+08:00 ] /2013-8/tpm/tpm/Tpl/Public/sass/font/fontawesome-webfont.ttf | ERR: (ThinkException) 无法加载模块tpm
+[ 2013-08-09T08:50:43+08:00 ] /2013-8/tpm/tpm/Tpl/Public/metro/sass/font/fontawesome-webfont.svg | ERR: (ThinkException) 无法加载模块tpm
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ route_check ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run CheckRoute Behavior [ RunTime:0.002189s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ route_check ] --END-- [ RunTime:0.002889s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ app_begin ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002407s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003067s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ action_begin ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run SwitchMobileTpl Behavior [ RunTime:0.002865s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ action_begin ] --END-- [ RunTime:0.003504s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | NOTIC: [8] Undefined index:  title IndexAction.class.php 第 33 行.
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_template ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run LocationTemplate Behavior [ RunTime:0.003249s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_template ] --END-- [ RunTime:0.003913s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_parse ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ParseTemplate Behavior [ RunTime:0.072572s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_parse ] --END-- [ RunTime:0.073221s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_filter ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ContentReplace Behavior [ RunTime:0.002325s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run TokenBuild Behavior [ RunTime:0.003023s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001432s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ShowRuntime Behavior [ RunTime:0.003267s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_filter ] --END-- [ RunTime:0.011805s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_end ] --START--
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Run ShowPageTrace Behavior [ RunTime:0.003053s ]
+[ 2013-08-09T09:00:49+08:00 ] /2013-8/tpm/Index/read.html | INFO: Tag[ view_end ] --END-- [ RunTime:0.004538s ]
